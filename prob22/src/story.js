@@ -43,9 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
 
     const profileContainer = document.getElementById('profileContainer');
-    
+    const userName = document.getElementById('userName')
+
     data.forEach(user => {
         const img = document.createElement('img');
+        const name = document.createElement('div');
 
         img.src = user.profileImg;
         img.alt = `${user.name}의 프로필 사진`;
@@ -53,8 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
         img.addEventListener('click', () => {
             user.isStoryViewed = true;
             console.log(`${user.name}의 스토리 방문`, user.isStoryViewed);
-        
         });
         profileContainer.appendChild(img);
+
+        name.textContent = user.name;
+        userName.appendChild(name);
+
     });
+
 });
