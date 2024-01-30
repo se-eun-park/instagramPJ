@@ -1,0 +1,48 @@
+#sectionHeader {
+    padding: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerProfile {
+    display: flex;
+    align-items: center;
+
+    font-size: .8rem;
+}
+
+#headerProfileUser {
+    display: flex;
+    align-items: center;
+
+    margin-right: 10px;
+
+    font-weight: bold;
+}
+
+#headerProfileUser img {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    margin-right: 5px;
+}
+
+#headerProfileDate {
+    color: gray;
+}
+
+/* ------------------------------------------ */
+
+#headerSetting {
+    display: flex;
+    align-items: center;
+}
+.view {
+    border: 2px solid magenta;
+    box-sizing: border-box;
+}
