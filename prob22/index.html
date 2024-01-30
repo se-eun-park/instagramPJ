@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="kr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,9 @@
     <link rel="stylesheet" href="./style/story.css">
     <link rel="stylesheet" href="./style/post.css">
     <script src="./src/story.js"></script>
-    <script src="./src/post.js"></script>
     <title>Instagram</title>
 </head>
+
 <body>
     <nav id="navBar">
         <div class="navBarLogo">
@@ -34,6 +35,63 @@
         </ul>
     </nav>
     <section id="story"></section>
-    <section id="post"></section>
+    <section id="post">
+        <!-- 헤더 -->
+        <div id="sectionHeader">
+            <!-- 프로필 및 올린 날짜 -->
+            <div id="headerProfile">
+                <!-- 프로필 사진 및 아이디 -->
+                <div id="headerProfileUser">
+                    <img src="https://via.placeholder.com/30" class="view" />
+                    <div>test_id</div>
+                </div>
+
+                <!-- 올린 날짜 24시간 지나면 N일 / 아니라면 N시간 -->
+                <div id="headerProfileDate">N일</div>
+            </div>
+
+            <!-- 설정 -->
+            <div id="headerSetting">
+                <!-- 이미지 -->
+                <img src="./asset/setting.png" />
+            </div>
+        </div>
+        <!--게시물 이미지 -->
+        <div id="sectionImage">            
+            <!-- 이미지 현재 위치 파악용 radio -->
+            <input type="radio" name="postImage" id="postImage1" checked/>
+            <input type="radio" name="postImage" id="postImage2" />
+            <input type="radio" name="postImage" id="postImage3" />
+            <!-- 포스트한 이미지 -->
+            <ul>
+                <li><img src="https://via.placeholder.com/150" /></li>
+                <li><img src="https://via.placeholder.com/200" /></li>
+                <li><img src="https://via.placeholder.com/250" /></li>
+            </ul>
+            
+            <!-- 이미지 이동 화살표 버튼 -->
+            <div id="sectionImageArrow">
+                <div id="leftArrow"><img src="./asset/leftArrow.png"/></div>
+                <div id="rightArrow"><img src="./asset/rightArrow.png"/></div>
+            </div>
+
+            <div id="sectionImageBullets">
+                <label for="postImage1">&nbsp;</label>
+                <label for="postImage2">&nbsp;</label>
+                <label for="postImage3">&nbsp;</label>
+            </div>
+        </div>
+
+        <!-- 게시물 반응 -->
+        <div id="sectionFooter">
+            <!-- 좋아요/공유/저장하기 -->
+            <div></div>
+
+            <!-- 좋아요 수 -->
+            <div></div>
+        </div>
+    </section>
+    <script src="./src/post.js"></script>
 </body>
+
 </html>

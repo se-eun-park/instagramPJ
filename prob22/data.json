@@ -1,0 +1,41 @@
+[
+    {
+        "id": "test1",
+        "name": "사람1",
+        "profileImg" : "https://via.placeholder.com/30",
+        "postImg": [
+            "https://via.placeholder.com/150",
+            "https://via.placeholder.com/150",
+            "https://via.placeholder.com/150"
+        ],
+        "postDate":"2024-01-30",
+        "isLiked": false,
+        "isStoryViewed": false
+    },
+    {
+        "id": "test2",
+        "name": "사람2",
+        "profileImg" : "https://via.placeholder.com/30",
+        "postImg": [
+            "https://via.placeholder.com/150",
+            "https://via.placeholder.com/150",
+            "https://via.placeholder.com/150"
+        ],
+        "postDate":"2024-01-28",
+        "isLiked": false,
+        "isStoryViewed": false
+    },
+    {
+        "id": "test3",
+        "name": "사람3",
+        "profileImg" : "https://via.placeholder.com/30",
+        "postImg": [
+            "https://via.placeholder.com/150",
+            "https://via.placeholder.com/150",
+            "https://via.placeholder.com/150"
+        ],
+        "postDate":"2024-01-31",
+        "isLiked": false,
+        "isStoryViewed": false
+    }
+]
