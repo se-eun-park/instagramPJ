@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./style/story.css">
     <link rel="stylesheet" href="./style/post.css">
     <script src="./src/story.js"></script>
-    <script src="./src/post.js"></script>
     <title>Instagram</title>
 </head>
 
@@ -43,7 +42,7 @@
             <div id="headerProfile">
                 <!-- 프로필 사진 및 아이디 -->
                 <div id="headerProfileUser">
-                    <img src="https://via.placeholder.com/30" class="view"/>
+                    <img src="https://via.placeholder.com/30" class="view" />
                     <div>test_id</div>
                 </div>
 
@@ -58,7 +57,29 @@
             </div>
         </div>
         <!--게시물 이미지 -->
-        <div id="sectionImage">
+        <div id="sectionImage">            
+            <!-- 이미지 현재 위치 파악용 radio -->
+            <input type="radio" name="postImage" id="postImage1" checked/>
+            <input type="radio" name="postImage" id="postImage2" />
+            <input type="radio" name="postImage" id="postImage3" />
+            <!-- 포스트한 이미지 -->
+            <ul>
+                <li><img src="https://via.placeholder.com/150" /></li>
+                <li><img src="https://via.placeholder.com/200" /></li>
+                <li><img src="https://via.placeholder.com/250" /></li>
+            </ul>
+            
+            <!-- 이미지 이동 화살표 버튼 -->
+            <div id="sectionImageArrow">
+                <div id="leftArrow"><img src="./asset/leftArrow.png"/></div>
+                <div id="rightArrow"><img src="./asset/rightArrow.png"/></div>
+            </div>
+
+            <div id="sectionImageBullets">
+                <label for="postImage1">&nbsp;</label>
+                <label for="postImage2">&nbsp;</label>
+                <label for="postImage3">&nbsp;</label>
+            </div>
         </div>
 
         <!-- 게시물 반응 -->
@@ -70,6 +91,7 @@
             <div></div>
         </div>
     </section>
+    <script src="./src/post.js"></script>
 </body>
 
 </html>
