@@ -8,15 +8,8 @@ $lineGray: #DEDDDD;
     position: relative;
 }
 
-.contents {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 .navBar {
-    position: sticky;
-    top: 1px;
+    position: fixed;
     width: 16rem;
     height: 100vh;
 

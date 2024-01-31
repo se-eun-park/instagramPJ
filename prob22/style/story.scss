@@ -1,0 +1,22 @@
+$lineGray: #DEDDDD;
+
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+// font-family: 'Actor', sans-serif;
+
+.story{
+    display: flex;
+    flex-direction: row;
+}
+
+.storyBackground {
+    display: block;
+    position: relative;
+
+    width: 31rem;
+    height: 5.7rem;
+
+    background-color: aquamarine;
+
+    margin-left: 21rem;
+}
+

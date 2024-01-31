@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div id="contents">
+    <div class="contents">
         <nav class="navBar">
             <div class="navBarBackground">
                 <div class="navBarContents">
@@ -39,11 +39,15 @@
         </nav>
 
         <section id="story">
-            <div id="profileContainer"></div>
-            <div id="userName"></div>
-            <script src="./src/story.js"></script>
+            <div class="storyBackground">
+                <div class="userStory">
+                    <div id="profileContainer"></div>
+                    <div id="userName"></div>
+                </div>
+                <script src="./src/story.js"></script>
+            </div>
         </section>
-
+    </div>
         <section id="post">
             <!-- 헤더 -->
             <div id="sectionHeader">
@@ -101,7 +105,6 @@
             </div>
         </section>
         <script src="./src/post.js"></script>
-    </div>
 </body>
 
 </html>
