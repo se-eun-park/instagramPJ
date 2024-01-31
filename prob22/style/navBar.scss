@@ -1,4 +1,157 @@
-.navBarLogoImg{
-    width: 15rem;
-    height: 10rem;
+$navBackground: #ffffff;
+$lineGray: #DEDDDD;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR&display=swap');
+
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+
+.navBar {
+    position: fixed;
+    width: 16rem;
+    height: 100vh;
+    left: 0;
+
+    margin-left: 2rem;
+}
+
+.navBarBackground {
+    display: block;
+    position: relative;
+
+    width: 16rem;
+    height: 100vh;
+
+    background-color: $navBackground;
+
+    border-width: 0 1px 0 0;
+    border-right: $lineGray;
+    border-style: solid;
+}
+
+.back { // border 얇게 보이기 위한 블록
+    display: block;
+    position: absolute;
+
+    width: 15.95rem;
+    height: 100vh;
+
+    background-color: $navBackground;
+}
+
+.navBarContents {
+    display: flex;
+    flex-direction: column;
+}
+
+.navBarMenu {
+    li {
+        margin-bottom: 3vh;
+    }
+
+    img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    span {
+        position: relative;
+        left: 0.5rem;
+        bottom: 0.5rem;
+
+        font-size: 1rem;
+        font-family: 'Noto Sans KR', sans-serif;
+
+    }
+
+    .home {
+        font-weight: bold;
+    }
+    
+}
+
+.navBarEtc {
+    li {
+        margin-bottom: 3vh;
+    }
+
+    img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    span {
+        position: relative;
+        left: 0.5rem;
+        bottom: 0.5rem;
+
+        font-size: 1rem;
+        font-family: 'Noto Sans KR', sans-serif;
+
+    }
+
+    margin: 10vh 0 4vh 0;
+}
+
+// 태블릿용
+@media screen and (max-width: 1230px){
+    .navBarBackground {
+        width: 4rem;
+        height: 100vh;
+    }
+    
+    .back { // border 얇게 보이기 위한 블록
+        width: 3.95rem;
+        height: 100vh;
+    }
+
+    .navBarMenu {
+        span {
+            font-size: 0;
+        }
+    }
+
+    .navBarEtc {
+        span {
+            font-size: 0;
+        }
+    }
+}
+
+// 핸드폰용
+@media screen and (max-width: 600px){
+    .navBar {
+        width: 600px;
+        transform: rotate(-90deg);
+    }
+    
+    .navBarLogo {
+        width: 0;
+        height: 0;
+    }
+
+    .navBarMenu {
+        margin-top: 9vh;
+
+        li {
+            margin-bottom: 4vh;
+        }
+
+        img {
+            width: 1.8rem;
+            height: 1.8rem;
+            transform: rotate(90deg);
+        } 
+
+    }
+    
+    .navBarEtc {
+
+        img {
+            width: 0;
+            height: 0;
+        }
+    }
 }

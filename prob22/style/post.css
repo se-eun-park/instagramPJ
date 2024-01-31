@@ -4,11 +4,14 @@ body {
 }
 
 /* ----------------------------------------------- */
+
 #sectionHeader {
     padding: 10px;
+    margin-top: 20vh;
+    
 
     display: flex;
-
+    
     justify-content: space-between;
     align-items: center;
 }
@@ -52,8 +55,8 @@ body {
 /* ------------------------------------------- */
 
 #sectionImage {
-    width: 100%;
-    height: 100%;
+    width: 25.5rem;
+    height: 33rem;
 
     aspect-ratio: 1;
 
@@ -63,8 +66,8 @@ body {
 }
 
 #sectionImage ul {
-    width: 100%;
-    height: 100%;
+    width: 25.5rem;
+    height: 33rem;
 
     padding: 0;
     margin: 0;
@@ -73,8 +76,8 @@ body {
 }
 
 #sectionImage ul li {
-    width: 100%;
-    height: 100%;
+    width: 25.5rem;
+    height: 33rem;
 
     position: absolute;
 
@@ -86,8 +89,8 @@ body {
 }
 
 #sectionImage ul li img {
-    width: 100%;
-    height: 100%;
+    width: 25.5rem;
+    height: 33rem;
 
     object-fit: fill;
 }
@@ -198,4 +201,67 @@ body {
 .view {
     border: 2px solid red;
     box-sizing: border-box;
+}
+
+/* 반응형 테스트용으로 post 지우는 코드 나중에 수정하기 */
+@media screen and (max-width: 600px) { 
+    
+    #headerProfile {
+        font-size: 0;
+    }
+    
+    #headerProfileUser img {
+        width: 0px;
+        height: 0px;
+
+    }
+
+    #sectionImage {
+        width: 0;
+        height: 0;
+    }
+    
+    #sectionImage ul {
+        width: 0;
+        height: 0;
+
+    }
+    
+    #sectionImage ul li {
+        width: 0;
+        height: 0;
+
+    }
+    
+    #sectionImage ul li img {
+        width: 0;
+        height: 0;
+
+    }
+
+    #sectionImageArrow {
+        width: 0;
+        height: 0;
+    }
+    
+    #leftArrow {
+        width: 0;
+        height: 0;
+    }
+    
+    #rightArrow {
+        width: 0;
+        height: 30;
+
+    }
+
+    #sectionImageBullets label {
+        width: 0;
+        height: 0;
+
+    }
+
+    .view {
+        border: 0;
+    }
 }

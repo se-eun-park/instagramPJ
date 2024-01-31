@@ -1,4 +1,115 @@
-.navBarLogoImg {
-  width: 15rem;
-  height: 10rem;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR&display=swap");
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.navBar {
+  position: fixed;
+  width: 16rem;
+  height: 100vh;
+  left: 0;
+  margin-left: 2rem;
+}
+
+.navBarBackground {
+  display: block;
+  position: relative;
+  width: 16rem;
+  height: 100vh;
+  background-color: #ffffff;
+  border-width: 0 1px 0 0;
+  border-right: #DEDDDD;
+  border-style: solid;
+}
+
+.back {
+  display: block;
+  position: absolute;
+  width: 15.95rem;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.navBarContents {
+  display: flex;
+  flex-direction: column;
+}
+
+.navBarMenu li {
+  margin-bottom: 3vh;
+}
+.navBarMenu img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.navBarMenu span {
+  position: relative;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.navBarMenu .home {
+  font-weight: bold;
+}
+
+.navBarEtc {
+  margin: 10vh 0 4vh 0;
+}
+.navBarEtc li {
+  margin-bottom: 3vh;
+}
+.navBarEtc img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.navBarEtc span {
+  position: relative;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+@media screen and (max-width: 1230px) {
+  .navBarBackground {
+    width: 4rem;
+    height: 100vh;
+  }
+  .back {
+    width: 3.95rem;
+    height: 100vh;
+  }
+  .navBarMenu span {
+    font-size: 0;
+  }
+  .navBarEtc span {
+    font-size: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navBar {
+    width: 600px;
+    transform: rotate(-90deg);
+  }
+  .navBarLogo {
+    width: 0;
+    height: 0;
+  }
+  .navBarMenu {
+    margin-top: 9vh;
+  }
+  .navBarMenu li {
+    margin-bottom: 4vh;
+  }
+  .navBarMenu img {
+    width: 1.8rem;
+    height: 1.8rem;
+    transform: rotate(90deg);
+  }
+  .navBarEtc img {
+    width: 0;
+    height: 0;
+  }
 }/*# sourceMappingURL=navBar.css.map */

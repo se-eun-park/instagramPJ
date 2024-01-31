@@ -8,90 +8,111 @@
     <link rel="stylesheet" href="./style/navBar.css">
     <link rel="stylesheet" href="./style/story.css">
     <link rel="stylesheet" href="./style/post.css">
-    <script src="./src/story.js"></script>
     <title>Instagram</title>
 </head>
 
 <body>
-    <nav id="navBar">
-        <div class="navBarLogo">
-            <img class="navBarLogoImg" src="./asset/navBarLogo.svg" alt="logo" />
-        </div>
-        
-        <ul class="navBarMenu">
-            <li><img class="navBarHomeIcon" src="./asset/homeIcon.svg" alt="home"/>홈</li>
-            <li><img class="navBarSearchIcon" src="./asset/searchIcon.svg"/>검색</li>
-            <li><img class="navBarExploreIcon" src="./asset/exploreIcon.svg"/>탐색 탭</li>
-            <li><img class="navBarReelsIcon" src="./asset/reelsIcon.svg"/>릴스</li>
-            <li><img class="navBarSendIcon" src="./asset/sendIcon.svg"/>메시지</li>
-            <li><img class="navBarFavoriteIcon" src="./asset/favoriteIcon.svg"/>알림</li>
-            <li><img class="navBarMakeIcon" src="./asset/makeIcon.svg"/>만들기</li>
-            <li><img class="navBarUserIcon" src="./asset/userIcon.svg"/>프로필</li>
-        </ul>
+    <div class="contents">
+        <nav class="navBar">
+            <div class="navBarBackground">
+                <div class="back">
+                    <div class="navBarContents">
+                        <div class="navBarLogo">
+                            <img id="navBarLogoImg" src="./asset/navBarLogo.svg" alt="logo" />
+                        </div>
+                    
+                        <ul class="navBarMenu">
+                            <li class="home"><img class="navBarHomeIcon" src="./asset/homeIcon.svg" alt="home"/><span>홈</span></li>
+                            <li><img class="navBarSearchIcon" src="./asset/searchIcon.svg"/><span>검색</span></li>
+                            <li><img class="navBarExploreIcon" src="./asset/exploreIcon.svg"/><span>탐색 탭</span></li>
+                            <li><img class="navBarReelsIcon" src="./asset/reelsIcon.svg"/><span>릴스</span></li>
+                            <li><img class="navBarSendIcon" src="./asset/sendIcon.svg"/><span>메시지</span></li>
+                            <li><img class="navBarFavoriteIcon" src="./asset/favoriteIcon.svg"/><span>알림</span></li>
+                            <li><img class="navBarMakeIcon" src="./asset/makeIcon.svg"/><span>만들기</span></li>
+                            <li><img class="navBarUserIcon" src="./asset/userIcon.svg"/><span>프로필</span></li>
+                        </ul>
+                        <ul class="navBarEtc">
+                            <li><img class="navBarThreadIcon" src="./asset/threadIcon.svg"/><span>Threads</span></li>
+                            <li><img class="navBarMoreIcon" src="./asset/moreIcon.svg"/><span>더 보기</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-        <ul class="navBarEtc">
-            <li><img class="navBarThreadIcon" src="./asset/threadIcon.svg"/>Threads</li>
-            <li><img class="navBarMoreIcon" src="./asset/moreIcon.svg"/>더 보기</li>
-        </ul>
-    </nav>
-    <section id="story"></section>
-    <section id="post">
-        <!-- 헤더 -->
-        <div id="sectionHeader">
-            <!-- 프로필 및 올린 날짜 -->
-            <div id="headerProfile">
-                <!-- 프로필 사진 및 아이디 -->
-                <div id="headerProfileUser">
-                    <img src="https://via.placeholder.com/30" class="view" />
-                    <div>test_id</div>
+        <section class="story">
+            <div class="userStory">
+                <div class="profileContainer"></div>
+                <div class="userName"></div>
+            </div>
+            <script src="./src/story.js"></script>
+        </section>
+    
+        <section id="post">
+            <!-- 헤더 -->
+            <div id="sectionHeader">
+                <!-- 프로필 및 올린 날짜 -->
+                <div id="headerProfile">
+                    <!-- 프로필 사진 및 아이디 -->
+                    <div id="headerProfileUser">
+                        <img src="https://via.placeholder.com/30" class="view" />
+                        <div>test_id</div>
+                    </div>
+
+                    <!-- 올린 날짜 24시간 지나면 N일 / 아니라면 N시간 -->
+                    <div id="headerProfileDate">N일</div>
                 </div>
 
-                <!-- 올린 날짜 24시간 지나면 N일 / 아니라면 N시간 -->
-                <div id="headerProfileDate">N일</div>
+                <!-- 설정 -->
+                <div id="headerSetting">
+                    <!-- 이미지 -->
+                    <img src="./asset/setting.png" />
+                </div>
+            </div>
+            <!--게시물 이미지 -->
+            <div id="sectionImage">            
+                <!-- 이미지 현재 위치 파악용 radio -->
+                <input type="radio" name="postImage" id="postImage1" checked/>
+                <input type="radio" name="postImage" id="postImage2" />
+                <input type="radio" name="postImage" id="postImage3" />
+                <!-- 포스트한 이미지 -->
+                <ul>
+                    <li><img src="https://via.placeholder.com/150" /></li>
+                    <li><img src="https://via.placeholder.com/200" /></li>
+                    <li><img src="https://via.placeholder.com/250" /></li>
+                </ul>
+                
+                <!-- 이미지 이동 화살표 버튼 -->
+                <div id="sectionImageArrow">
+                    <div id="leftArrow"><img src="./asset/leftArrow.png"/></div>
+                    <div id="rightArrow"><img src="./asset/rightArrow.png"/></div>
+                </div>
+
+                <div id="sectionImageBullets">
+                    <label for="postImage1">&nbsp;</label>
+                    <label for="postImage2">&nbsp;</label>
+                    <label for="postImage3">&nbsp;</label>
+                </div>
             </div>
 
-            <!-- 설정 -->
-            <div id="headerSetting">
-                <!-- 이미지 -->
-                <img src="./asset/setting.png" />
-            </div>
-        </div>
-        <!--게시물 이미지 -->
-        <div id="sectionImage">            
-            <!-- 이미지 현재 위치 파악용 radio -->
-            <input type="radio" name="postImage" id="postImage1" checked/>
-            <input type="radio" name="postImage" id="postImage2" />
-            <input type="radio" name="postImage" id="postImage3" />
-            <!-- 포스트한 이미지 -->
-            <ul>
-                <li><img src="https://via.placeholder.com/150" /></li>
-                <li><img src="https://via.placeholder.com/200" /></li>
-                <li><img src="https://via.placeholder.com/250" /></li>
-            </ul>
-            
-            <!-- 이미지 이동 화살표 버튼 -->
-            <div id="sectionImageArrow">
-                <div id="leftArrow"><img src="./asset/leftArrow.png"/></div>
-                <div id="rightArrow"><img src="./asset/rightArrow.png"/></div>
-            </div>
+            <!-- 게시물 반응 -->
+            <div id="sectionFooter">
+                <!-- 좋아요/공유/저장하기 -->
+                <div></div>
 
-            <div id="sectionImageBullets">
-                <label for="postImage1">&nbsp;</label>
-                <label for="postImage2">&nbsp;</label>
-                <label for="postImage3">&nbsp;</label>
+                <!-- 좋아요 수 -->
+                <div></div>
             </div>
-        </div>
+        </section>
+        <script src="./src/post.js"></script>
 
-        <!-- 게시물 반응 -->
-        <div id="sectionFooter">
-            <!-- 좋아요/공유/저장하기 -->
-            <div></div>
-
-            <!-- 좋아요 수 -->
-            <div></div>
-        </div>
-    </section>
-    <script src="./src/post.js"></script>
+        <section id="follow">
+            <div class="followImg">
+                <img src="./asset/testImg/followImg.png" />
+            </div>
+        </section>
+    
+    </div>
 </body>
 
 </html>
