@@ -1,4 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR&display=swap");
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navBar {
+  position: sticky;
+  top: 1px;
+  width: 16rem;
+  height: 100vh;
+  margin-left: 2.5rem;
+}
+
+.navBarBackground {
+  display: block;
+  position: relative;
+  width: 16rem;
+  height: 100vh;
+  background-color: #ffffff;
+  border-width: 0 0.5px 0 0;
+  border-right: #DEDDDD;
+  border-style: solid;
+}
+
+.navBarContents {
+  display: flex;
+  flex-direction: column;
+}
+
 .navBarLogoImg {
-  width: 15rem;
-  height: 10rem;
+  width: 7.5rem;
+  height: 4.2rem;
+  margin: 2vh 0 3vh 0;
+}
+
+.navBarMenu li {
+  margin-bottom: 3vh;
+}
+.navBarMenu img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.navBarMenu span {
+  position: relative;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+}
+
+.navBarEtc {
+  margin: 10vh 0 4vh 0;
+}
+.navBarEtc li {
+  margin-bottom: 3vh;
+}
+.navBarEtc img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.navBarEtc span {
+  position: relative;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
 }/*# sourceMappingURL=navBar.css.map */
