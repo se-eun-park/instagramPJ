@@ -63,3 +63,11 @@ table {
 	height: 29rem;
 
 }
+
+@media screen and (max-width: 1230px) {
+	.followImg img {
+		width: 0;
+		height: 0;
+	
+	}
+}

@@ -50,4 +50,15 @@
 .userName span {
   font-size: 0.8rem;
   font-family: "Actor", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .story {
+    display: flex;
+    position: relative;
+    width: 31rem;
+    height: 5.7rem;
+    padding-top: 6rem;
+    left: 7rem;
+  }
 }/*# sourceMappingURL=story.css.map */

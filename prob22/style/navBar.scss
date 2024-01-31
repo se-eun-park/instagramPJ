@@ -46,13 +46,6 @@ $lineGray: #DEDDDD;
     flex-direction: column;
 }
 
-.navBarLogoImg {
-    width: 7.5rem;
-    height: 4.2rem;
-
-    margin: 2vh 0 3vh 0;
-}
-
 .navBarMenu {
     li {
         margin-bottom: 3vh;
@@ -100,4 +93,65 @@ $lineGray: #DEDDDD;
     }
 
     margin: 10vh 0 4vh 0;
+}
+
+// 태블릿용
+@media screen and (max-width: 1230px){
+    .navBarBackground {
+        width: 4rem;
+        height: 100vh;
+    }
+    
+    .back { // border 얇게 보이기 위한 블록
+        width: 3.95rem;
+        height: 100vh;
+    }
+
+    .navBarMenu {
+        span {
+            font-size: 0;
+        }
+    }
+
+    .navBarEtc {
+        span {
+            font-size: 0;
+        }
+    }
+}
+
+// 핸드폰용
+@media screen and (max-width: 600px){
+    .navBar {
+        width: 600px;
+        transform: rotate(-90deg);
+    }
+    
+    .navBarLogo {
+        width: 0;
+        height: 0;
+    }
+
+    .navBarMenu {
+        margin-top: 9vh;
+
+        li {
+            margin-bottom: 4vh;
+        }
+
+        img {
+            width: 1.8rem;
+            height: 1.8rem;
+            transform: rotate(90deg);
+        } 
+
+    }
+    
+    .navBarEtc {
+
+        img {
+            width: 0;
+            height: 0;
+        }
+    }
 }
