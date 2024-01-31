@@ -8,7 +8,8 @@
   position: fixed;
   width: 16rem;
   height: 100vh;
-  margin-left: 2.5rem;
+  left: 0;
+  margin-left: 2rem;
 }
 
 .navBarBackground {
@@ -17,9 +18,17 @@
   width: 16rem;
   height: 100vh;
   background-color: #ffffff;
-  border-width: 0 0.5px 0 0;
+  border-width: 0 1px 0 0;
   border-right: #DEDDDD;
   border-style: solid;
+}
+
+.back {
+  display: block;
+  position: absolute;
+  width: 15.95rem;
+  height: 100vh;
+  background-color: #ffffff;
 }
 
 .navBarContents {

@@ -12,8 +12,9 @@ $lineGray: #DEDDDD;
     position: fixed;
     width: 16rem;
     height: 100vh;
+    left: 0;
 
-    margin-left: 2.5rem;
+    margin-left: 2rem;
 }
 
 .navBarBackground {
@@ -25,9 +26,19 @@ $lineGray: #DEDDDD;
 
     background-color: $navBackground;
 
-    border-width: 0 0.5px 0 0;
+    border-width: 0 1px 0 0;
     border-right: $lineGray;
     border-style: solid;
+}
+
+.back { // border 얇게 보이기 위한 블록
+    display: block;
+    position: absolute;
+
+    width: 15.95rem;
+    height: 100vh;
+
+    background-color: $navBackground;
 }
 
 .navBarContents {
