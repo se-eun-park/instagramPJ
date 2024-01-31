@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Json파일 외부에서 불러올 때, 브라우저 보안 이슈로 fetch요청 거부되어 직접 선언 방식으로 변경
+    // import  해서도 해봤는데 cors 에러
     const data = [
         {
-            "id": "test1",
+            "id": "1",
             "name": "user_name_1",
             "profileImg" : "./asset/testImg/test1.png",
             "postImg": [
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "isStoryViewed": false
         },
         {
-            "id": "test2",
+            "id": "2",
             "name": "user_name_2",
             "profileImg" : "./asset/testImg/test2.png",
             "postImg": [
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "isStoryViewed": false
         },
         {
-            "id": "test3",
+            "id": "3",
             "name": "user_name_3",
             "profileImg" : "./asset/testImg/test3.png",
             "postImg": [
@@ -63,20 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.alt = `${user.name}의 프로필 사진`;
         img.style.cursor = 'pointer';
         img.style.left = `${offset_img}rem` 
-        img.addEventListener('click', () => {
-            user.isStoryViewed = true;
-            console.log(`${user.name}의 스토리 방문`, user.isStoryViewed);
 
-            // 스토리 방문 시, style 변경
-            if (user.isStoryViewed) {
-                imgStroke.style.width = `4.125rem`; // 기존 width에서 0.1rem 감소
-                imgStroke.style.height = `4.125rem`; // 기존 height에서 0.1rem 감소
-                imgStroke.style.background = '#000'; // 색상을 검은색으로 변경
-            }
-        });
-
-        
-        
         imgBack.classList.add("imgBack");
         imgStroke.classList.add("imgStroke");
 
@@ -90,11 +78,29 @@ document.addEventListener('DOMContentLoaded', () => {
         profileContainer.appendChild(imgStroke);
         
         nameSpan.textContent = user.name;
-        nameSpan.classList.add("name");
+        nameSpan.classList.add(`name${user.id}`);
 
         nameSpan.style.marginRight = `${offset_name}rem`
 
         userName.appendChild(nameSpan);
+
+        img.addEventListener('click', () => {
+            user.isStoryViewed = true;
+            console.log(`${user.name}의 스토리 방문`, user.isStoryViewed);
+
+            // 스토리 방문 시, style 변경
+            if (user.isStoryViewed) {
+                imgStroke.style.width = `4.125rem`;
+                imgStroke.style.height = `4.125rem`;
+                imgStroke.style.background = '#DEDDDD';
+
+                // name${user.id}인 span 요소 찾기
+                const nameTrue = document.querySelector(`.name${user.id}`);
+                if (nameTrue) {
+                    nameTrue.style.color = '#9D9D9D';
+                }
+            }
+        });
 
     });
 
