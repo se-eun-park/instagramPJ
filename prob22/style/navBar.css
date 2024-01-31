@@ -55,6 +55,8 @@
   bottom: 0.5rem;
   font-size: 1rem;
   font-family: "Noto Sans KR", sans-serif;
+}
+.navBarMenu .home {
   font-weight: bold;
 }
 
@@ -74,5 +76,4 @@
   bottom: 0.5rem;
   font-size: 1rem;
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: bold;
 }/*# sourceMappingURL=navBar.css.map */
