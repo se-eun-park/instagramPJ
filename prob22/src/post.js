@@ -15,6 +15,12 @@ let next = document.getElementById('rightArrow')
 let imgs = document.querySelectorAll('#sectionImage ul li')
 let bullets = document.querySelectorAll('#sectionImageBullets label')
 
+window.onload = function() {
+    showImg(0)
+    showBullet(0)
+    showArrow()
+}
+
 let imgNum = 0
 function showImg(idx) {
     imgs.forEach(function(img, index) {
@@ -35,9 +41,9 @@ function showImg(idx) {
 function showBullet(idx) {
     bullets.forEach(function(b, index) {
         if (index == idx) {
-            b.style.backgroundColor = 'red'
+            b.style.backgroundColor = 'rgba(255,255,255,0.8)'
         } else {
-            b.style.backgroundColor = 'black'
+            b.style.backgroundColor = 'rgba(0,0,0,0.5)'
         }
     })
 }
@@ -75,4 +81,16 @@ next.onclick = function () {
     showBullet(imgNum)
     showArrow()
     showImg(imgNum)
+}
+
+// -------------------------footer-----------------------
+function toggleLike() {
+    let like = document.getElementById('sectionFooterImgLike')
+    let imgSrc = like.src
+
+    if(imgSrc.includes('fill')) {
+        like.src = './asset/like.png'
+    } else {
+        like.src = './asset/like_fill.png'
+    }
 }
