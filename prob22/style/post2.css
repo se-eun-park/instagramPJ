@@ -1,24 +1,4 @@
-#wrapperPost {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-}
-
-.post {
-    width: 100%;
-    
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-
-    
-}
-/* ----------------------------------------------- */
-
-#sectionHeader {
+#sectionHeader2 {
     padding: 10px;
     margin-top: 20vh;
     
@@ -29,14 +9,14 @@
     align-items: center;
 }
 
-#headerProfile {
+#headerProfile2 {
     display: flex;
     align-items: center;
 
     font-size: .8rem;
 }
 
-#headerProfileUser {
+#headerProfileUser2 {
     display: flex;
     align-items: center;
 
@@ -45,7 +25,7 @@
     font-weight: bold;
 }
 
-#headerProfileUser img {
+#headerProfileUser2 img {
     width: 30px;
     height: 30px;
 
@@ -54,20 +34,20 @@
     margin-right: 5px;
 }
 
-#headerProfileDate {
+#headerProfileDate2 {
     color: gray;
 }
 
 /* ------------------------------------------ */
 
-#headerSetting {
+#headerSetting2 {
     display: flex;
     align-items: center;
 }
 
 /* ------------------------------------------- */
 
-#sectionImage {
+#sectionImage2 {
     width: 100%;
     height: 100%;
 
@@ -78,7 +58,7 @@
     position: relative;
 }
 
-#sectionImage ul {
+#sectionImage2 ul {
     width: 100%;
     height: 100%;
 
@@ -88,7 +68,7 @@
     list-style: none;
 }
 
-#sectionImage ul li {
+#sectionImage2 ul li {
     width: 100%;
     height: 100%;
 
@@ -101,18 +81,14 @@
     margin: 0;
 }
 
-#sectionImage ul li img {
+#sectionImage2 ul li img {
     width: 100%;
     height: 100%;
 
     object-fit: fill;
 }
 
-#sectionImage input[type="radio"] {
-    display: none;
-}
-
-#sectionImageArrow {
+#sectionImageArrow2 {
     width: 100%;
     height: 100%;
 
@@ -134,7 +110,7 @@
     z-index: 5;
 }
 
-#leftArrow {
+#leftArrow2 {
     width: 20px;
     height: 20px;
 
@@ -147,7 +123,7 @@
     cursor: pointer;
 }
 
-#rightArrow {
+#rightArrow2 {
     width: 20px;
     height: 20px;
 
@@ -159,7 +135,7 @@
 }
 
 
-#sectionImageBullets {
+#sectionImageBullets2 {
     position: absolute;
 
     left: 50%;
@@ -170,7 +146,7 @@
     z-index: 10;
 }
 
-#sectionImageBullets label {
+#sectionImageBullets2 label {
     width: 15px;
     height: 15px;
 
@@ -185,13 +161,13 @@
 
 /* ----------------------------------------- */
 
-#sectionFooter div:nth-child(4) {
+#sectionFooter2 div:nth-child(4) {
     width: 100%;
     padding-bottom: 15px;
     border-bottom: 1px solid #ccc;
 }
 
-#sectionFooterBtn {
+#sectionFooterBtn2 {
     padding: 10px 5px;
 
     display: flex;
@@ -201,7 +177,7 @@
 
 }
 
-#sectionFooterLike {
+#sectionFooterLike2 {
     padding: 0 5px;
     display: flex;
     flex-direction: column;
@@ -214,7 +190,7 @@
     font-size: .8rem;
 }
 
-#sectionFooterLike div {
+#sectionFooterLike2 div {
     display: flex;
 
     justify-content: start;
@@ -223,7 +199,7 @@
     cursor: pointer;
 }
 
-#sectionFooterLike img {
+#sectionFooterLike2 img {
     width: 20px;
 
     margin: 0 5px 0 0;
@@ -231,25 +207,10 @@
     border-radius: 50%;
 }
 
-#sectionFooterLike b {
+#sectionFooterLike2 b {
     font-weight: bold;
 }
 
-#sectionFooterImgLike {
+#sectionFooterImgLike2 {
     cursor: pointer;
-}
-
-
-.view {
-    border: 2px solid red;
-    box-sizing: border-box;
-}
-
-i {
-    margin-left: 5px;
-    color: #3f729b;
-}
-
-g {
-    color: gray;
 }
