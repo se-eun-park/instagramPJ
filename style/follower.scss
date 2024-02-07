@@ -90,6 +90,59 @@ $footerColor : #DCDCDC;
     }
 }
 
+.followerList {
+    width: 17.8rem;
+    margin-bottom: 1.2rem;
+
+    .followerInfo {
+        display: flex;
+        flex-direction: row;
+
+        margin-bottom: 1.2rem;
+
+        img {
+            width: 2.8rem;
+            height: 2.8rem;
+    
+            margin-right: 0.6rem;
+    
+            border-radius: 50%;
+        }
+
+        .followerName {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.45rem;
+            width: 7rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            font-family: 'Barlow', sans-serif;
+            color: $idGray;
+    
+            span {
+                position: relative;
+                top: 0.25rem;
+    
+                font-size: 0.7rem;
+                font-weight: 400;
+                font-family: 'Barlow', sans-serif;
+                color: $textGray;
+            }
+        }
+
+        span {
+            position: absolute;
+            right: 0;
+            top: 0.8rem;
+            font-size: 0.7rem;
+            font-weight: bold;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: $buttonColor;
+        }
+    }
+
+}
+
 .footer {
     span {
         font-size: 0.7rem;

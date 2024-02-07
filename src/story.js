@@ -1,6 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
+function renderStory() {
+    
     const profileContainer = document.getElementsByClassName('profileContainer')[0];
     const userName = document.getElementsByClassName('userName')[0];
+
+    profileContainer.innerHTML = '';
+    userName.innerHTML = '';
 
     // img가 불러와질 때 마다 간격을 유지하며 오도록 설정해주는 변수
     let offset_img = 2.2;
@@ -9,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let offset_name = 1.6;
 
     data.forEach(user => {
+        if (user.Follower) {
         const img = document.createElement('img');
         // 이미지를 감싸는 요소들
         const imgBack = document.createElement('div');
@@ -61,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+    }
     });
 
-});
+}

@@ -66,6 +66,49 @@
   color: #252525;
 }
 
+.followerList {
+  width: 17.8rem;
+  margin-bottom: 1.2rem;
+}
+.followerList .followerInfo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.2rem;
+}
+.followerList .followerInfo img {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 0.6rem;
+  border-radius: 50%;
+}
+.followerList .followerInfo .followerName {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.45rem;
+  width: 7rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  color: #373737;
+}
+.followerList .followerInfo .followerName span {
+  position: relative;
+  top: 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  font-family: "Barlow", sans-serif;
+  color: #737373;
+}
+.followerList .followerInfo span {
+  position: absolute;
+  right: 0;
+  top: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #0095F6;
+}
+
 .footer span {
   font-size: 0.7rem;
   font-weight: 600;
