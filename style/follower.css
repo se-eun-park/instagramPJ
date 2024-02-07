@@ -75,35 +75,6 @@
 
 @media screen and (max-width: 1230px) {
   .follwerContainer {
-    width: 0;
-    height: 0;
-  }
-  .myProfile img {
-    width: 0;
-    height: 0;
-  }
-  .myProfile .myInfo {
-    margin-top: 0;
-  }
-  .myProfile .myInfo .myId {
-    font-size: 0;
-  }
-  .myProfile .myInfo .myName {
-    font-size: 0;
-  }
-  .myProfile .changeButton {
-    font-size: 0;
-  }
-  .followerListHeader {
-    margin: 0;
-  }
-  .followerListHeader .forYou {
-    font-size: 0;
-  }
-  .followerListHeader .allView {
-    font-size: 0;
-  }
-  .footer span {
-    font-size: 0;
+    display: none;
   }
 }/*# sourceMappingURL=follower.css.map */

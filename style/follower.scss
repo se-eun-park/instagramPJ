@@ -18,6 +18,7 @@ $footerColor : #DCDCDC;
 
     width: 17.8rem;
     height: 28.3rem;
+
 }
 
 .myProfile {
@@ -100,49 +101,7 @@ $footerColor : #DCDCDC;
 
 @media screen and (max-width: 1230px) {
     .follwerContainer {
-        width: 0;
-        height: 0;
-    }
-    
-    .myProfile {
-        img {
-            width: 0;
-            height: 0;
-        }
-    
-        .myInfo {
-            margin-top: 0;
-    
-            .myId {
-                font-size: 0;
-            }
-    
-            .myName {
-                font-size: 0;
-            }
-        }
-    
-        .changeButton {
-            font-size: 0;
-        }
-    }
-    
-    .followerListHeader {
-        margin: 0;
-    
-        .forYou {
-            font-size: 0;
-        }
-    
-        .allView {
-            font-size: 0;
-        }
-    }
-    
-    .footer {
-        span {
-            font-size: 0;
-        }
+        display: none;
     }
 
 }

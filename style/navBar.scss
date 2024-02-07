@@ -14,6 +14,7 @@ $lineGray: #DEDDDD;
     height: 100vh;
 
     margin-left: 2rem;
+
 }
 
 .navBarBackground {
@@ -28,6 +29,8 @@ $lineGray: #DEDDDD;
     border-width: 0 1px 0 0;
     border-right: $lineGray;
     border-style: solid;
+
+    transition: width 0.5s ease;
 }
 
 .back { // border 얇게 보이기 위한 블록
@@ -95,7 +98,7 @@ $lineGray: #DEDDDD;
 }
 
 // 태블릿용
-@media screen and (max-width: 1230px){
+@media screen and (max-width: 1200px){
     .navBarBackground {
         width: 4rem;
         height: 100vh;
@@ -120,37 +123,8 @@ $lineGray: #DEDDDD;
 }
 
 // 핸드폰용
-@media screen and (max-width: 600px){
+@media screen and (max-width: 640px){
     .navBar {
-        width: 600px;
-        transform: rotate(-90deg);
-    }
-    
-    .navBarLogo {
-        width: 0;
-        height: 0;
-    }
-
-    .navBarMenu {
-        margin-top: 9vh;
-
-        li {
-            margin-bottom: 4vh;
-        }
-
-        img {
-            width: 1.8rem;
-            height: 1.8rem;
-            transform: rotate(90deg);
-        } 
-
-    }
-    
-    .navBarEtc {
-
-        img {
-            width: 0;
-            height: 0;
-        }
+        display: none;
     }
 }

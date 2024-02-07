@@ -1,13 +1,13 @@
 function updateImageSrc() {
     var image = document.getElementById('navBarLogoImg');
-    if (window.innerWidth < 601) {
+    if (window.innerWidth < 641) {
         image.src = './asset/navIcon/navBarLogo.svg';
         image.style.width = `7.5rem`;
         image.style.height = `4.2rem`;
         image.style.transform = `rotate(90deg)`;
         image.style.margin = `6rem 0 0 75vh`;
   
-    } else if (window.innerWidth < 1231) {
+    } else if (window.innerWidth < 1201) {
       image.src = './asset/navIcon/instagramIcon.svg';
       image.style.width = `1.8rem`;
       image.style.height = `1.8rem`;

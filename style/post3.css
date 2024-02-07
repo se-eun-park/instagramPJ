@@ -20,7 +20,7 @@
 
 #sectionHeader3 {
     padding: 10px;
-    margin-top: 20vh;
+    margin-top: 10vh;
     
 
     display: flex;
@@ -171,8 +171,8 @@
 }
 
 #sectionImageBullets3 label {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
 
     display: inline-block;
 

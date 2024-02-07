@@ -20,6 +20,7 @@
   border-width: 0 1px 0 0;
   border-right: #DEDDDD;
   border-style: solid;
+  transition: width 0.5s ease;
 }
 
 .back {
@@ -71,7 +72,7 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1200px) {
   .navBarBackground {
     width: 4rem;
     height: 100vh;
@@ -87,28 +88,8 @@
     font-size: 0;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .navBar {
-    width: 600px;
-    transform: rotate(-90deg);
-  }
-  .navBarLogo {
-    width: 0;
-    height: 0;
-  }
-  .navBarMenu {
-    margin-top: 9vh;
-  }
-  .navBarMenu li {
-    margin-bottom: 4vh;
-  }
-  .navBarMenu img {
-    width: 1.8rem;
-    height: 1.8rem;
-    transform: rotate(90deg);
-  }
-  .navBarEtc img {
-    width: 0;
-    height: 0;
+    display: none;
   }
 }/*# sourceMappingURL=navBar.css.map */

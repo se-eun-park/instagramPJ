@@ -5,6 +5,8 @@
   width: 31rem;
   height: 5.7rem;
   padding-top: 2rem;
+  margin-right: 4rem;
+  transition: padding-left 0.3s ease;
 }
 
 .profileContainer {
@@ -50,13 +52,9 @@
   font-family: "Barlow", sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .story {
-    display: flex;
     position: relative;
-    width: 31rem;
-    height: 5.7rem;
-    padding-top: 6rem;
-    left: 7rem;
+    padding-left: 3rem;
   }
 }/*# sourceMappingURL=story.css.map */
