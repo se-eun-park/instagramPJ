@@ -260,6 +260,17 @@ g {
 
 @media screen and (max-width: 800px) {
     #wrapperPost {
-        width: 25rem;
+        width: 28rem;
     }
+}
+
+@media screen and (max-width: 640px) {
+    #sectionHeader {
+        margin-top: 7rem;
+    }
+
+    #sectionFooterBtn {
+        padding: 17px 0;
+    }
+
 }

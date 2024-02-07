@@ -70,3 +70,9 @@ table {
 		justify-content: center;
 	}
 }
+
+@media screen and (max-width: 640px) {
+	.contents {
+		flex-direction: column;
+	}
+}

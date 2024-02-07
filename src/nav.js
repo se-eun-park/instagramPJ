@@ -4,8 +4,7 @@ function updateImageSrc() {
         image.src = './asset/navIcon/navBarLogo.svg';
         image.style.width = `7.5rem`;
         image.style.height = `4.2rem`;
-        image.style.transform = `rotate(90deg)`;
-        image.style.margin = `6rem 0 0 75vh`;
+        image.style.margin = `0.5vh 0 0 2vh`;
   
     } else if (window.innerWidth < 1201) {
       image.src = './asset/navIcon/instagramIcon.svg';
@@ -18,7 +17,6 @@ function updateImageSrc() {
       image.style.width = `7.5rem`;
       image.style.height = `4.2rem`;
       image.style.margin = `2vh 0 3vh 0`;
-      image.style.transform = `rotate(360deg)`;
     }
   }
   

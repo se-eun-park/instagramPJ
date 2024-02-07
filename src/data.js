@@ -1,7 +1,7 @@
 const data = [
     {
         "id": "1",
-        "name": "user_name_1",
+        "name": "dfaggg",
         "profileImg" : "./asset/testImg/test1.png",
         "postImg": [
             "https://via.placeholder.com/150",
@@ -14,7 +14,7 @@ const data = [
     },
     {
         "id": "2",
-        "name": "user_name_2",
+        "name": "cbb",
         "profileImg" : "./asset/testImg/test2.png",
         "postImg": [
             "https://via.placeholder.com/150",
@@ -27,7 +27,7 @@ const data = [
     },
     {
         "id": "3",
-        "name": "user_name_3",
+        "name": "fnfnnngh",
         "profileImg" : "./asset/testImg/test3.png",
         "postImg": [
             "https://via.placeholder.com/150",
@@ -40,7 +40,7 @@ const data = [
     },
     {
         "id": "4",
-        "name": "user_name_3",
+        "name": "dkdgdll",
         "profileImg" : "./asset/testImg/test3.png",
         "postImg": [
             "https://via.placeholder.com/150",

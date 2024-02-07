@@ -6,6 +6,7 @@
 
 .navBar {
   position: sticky;
+  top: 0;
   max-width: 16rem;
   height: 100vh;
   margin-left: 2rem;
@@ -20,7 +21,7 @@
   border-width: 0 1px 0 0;
   border-right: #DEDDDD;
   border-style: solid;
-  transition: width 0.5s ease;
+  transition: width 0.3s linear;
 }
 
 .back {
@@ -34,6 +35,10 @@
 .navBarContents {
   display: flex;
   flex-direction: column;
+}
+
+.miniNavBar {
+  display: none;
 }
 
 .navBarMenu li {
@@ -90,6 +95,60 @@
 }
 @media screen and (max-width: 640px) {
   .navBar {
+    position: fixed;
+    width: 100%;
+    max-width: none;
+    height: 4.5rem;
+    margin-left: 0;
+    z-index: 4;
+  }
+  .navBarBackground {
+    width: 100%;
+    height: 4.5rem;
+    border-width: 0 0 1px 0;
+    border-color: #DEDDDD;
+    transition: none;
+  }
+  .back {
+    width: 0;
+    height: 0;
+  }
+  .navBarMenu {
     display: none;
+  }
+  .navBarEtc {
+    display: none;
+  }
+  .miniNavBar {
+    display: flex;
+    position: absolute;
+  }
+  .miniNavBar .searchBox {
+    display: block;
+    margin-top: 2vh;
+    margin-left: 11rem;
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 0.6rem;
+    background-color: #EDEDED;
+  }
+  .miniNavBar .searchBox .miniNavBarSearchIcon {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    color: #9D9D9D;
+  }
+  .miniNavBar .searchBox span {
+    position: relative;
+    bottom: 0.3rem;
+    left: 0.7rem;
+    font-size: 1.1rem;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #9D9D9D;
+  }
+  .miniNavBar .miniNavBarFavoriteIcon {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 2.6vh;
+    margin-left: 1rem;
   }
 }/*# sourceMappingURL=navBar.css.map */
