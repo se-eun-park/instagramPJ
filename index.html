@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style/post.css">
     <link rel="stylesheet" href="./style/post2.css">
     <link rel="stylesheet" href="./style/post3.css">
+    <link rel="stylesheet" href="./style/follower.css">
     <title>Instagram</title>
 </head>
 
@@ -20,27 +21,28 @@
                 <div class="back">
                     <div class="navBarContents">
                         <div class="navBarLogo">
-                            <img id="navBarLogoImg" src="./asset/navBarLogo.svg" alt="logo" />
+                            <img id="navBarLogoImg" src="./asset/navIcon/instagramIcon.svg" alt="logo" />
                         </div>
 
                         <ul class="navBarMenu">
-                            <li class="home"><img class="navBarHomeIcon" src="./asset/homeIcon.svg"
+                            <li class="home"><img class="navBarHomeIcon" src="./asset/navIcon/homeIcon.svg"
                                     alt="home" /><span>홈</span></li>
-                            <li><img class="navBarSearchIcon" src="./asset/searchIcon.svg" /><span>검색</span></li>
-                            <li><img class="navBarExploreIcon" src="./asset/exploreIcon.svg" /><span>탐색 탭</span></li>
-                            <li><img class="navBarReelsIcon" src="./asset/reelsIcon.svg" /><span>릴스</span></li>
-                            <li><img class="navBarSendIcon" src="./asset/sendIcon.svg" /><span>메시지</span></li>
-                            <li><img class="navBarFavoriteIcon" src="./asset/favoriteIcon.svg" /><span>알림</span></li>
-                            <li><img class="navBarMakeIcon" src="./asset/makeIcon.svg" /><span>만들기</span></li>
-                            <li><img class="navBarUserIcon" src="./asset/userIcon.svg" /><span>프로필</span></li>
+                            <li><img class="navBarSearchIcon" src="./asset/navIcon/searchIcon.svg" /><span>검색</span></li>
+                            <li><img class="navBarExploreIcon" src="./asset/navIcon/exploreIcon.svg" /><span>탐색 탭</span></li>
+                            <li><img class="navBarReelsIcon" src="./asset/navIcon/reelsIcon.svg" /><span>릴스</span></li>
+                            <li><img class="navBarSendIcon" src="./asset/navIcon/sendIcon.svg" /><span>메시지</span></li>
+                            <li><img class="navBarFavoriteIcon" src="./asset/navIcon/favoriteIcon.svg" /><span>알림</span></li>
+                            <li><img class="navBarMakeIcon" src="./asset/navIcon/makeIcon.svg" /><span>만들기</span></li>
+                            <li><img class="navBarUserIcon" src="./asset/navIcon/userIcon.svg" /><span>프로필</span></li>
                         </ul>
                         <ul class="navBarEtc">
-                            <li><img class="navBarThreadIcon" src="./asset/threadIcon.svg" /><span>Threads</span></li>
-                            <li><img class="navBarMoreIcon" src="./asset/moreIcon.svg" /><span>더 보기</span></li>
+                            <li><img class="navBarThreadIcon" src="./asset/navIcon/threadIcon.svg" /><span>Threads</span></li>
+                            <li><img class="navBarMoreIcon" src="./asset/navIcon/moreIcon.svg" /><span>더 보기</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <script src="./src/nav.js"></script>
         </nav>
 
         <section class="story">
@@ -282,13 +284,32 @@
                 </div>
             </section>
         </div>
-
-        
+    
         <script src="./src/post.js"></script>
 
-        <section id="follow">
-            <div class="followImg">
-                <img src="./asset/testImg/followImg.png" />
+        <section id="follower">
+            <div class="follwerContainer">
+                <div class="myProfile">
+                    <img class="myProfileImg" src="https://bit.ly/4bwqG4C" alt="my profile img" />
+                    <span>전환</span>
+                </div>
+
+                <div class="followerListHeader">
+                    <span>회원님을 위한 추천</span>
+                    <span>모두 보기</span>
+                </div>
+                
+                <div class="followerList">
+                    <div class="followerProfileContainer"></div>
+                    <div class="followerName"></div>
+                </div>
+                
+                <div class="footer">
+                    <span>소개 . 도움말 . 홍보 센터 . API . 채용 정보 .</span><br/>
+                    <span>개인정보처리방침 . 약관 . 위치 . 언어 . Meta Verified</span>
+                    <br/><br/>
+                    <span>© 2024 INSTAGRAM FROM META</span>
+                </div>
             </div>
         </section>
 
