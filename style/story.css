@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 .story {
   display: flex;
   position: relative;
@@ -49,7 +49,7 @@
 
 .userName span {
   font-size: 0.8rem;
-  font-family: "Actor", sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 @media screen and (max-width: 600px) {
