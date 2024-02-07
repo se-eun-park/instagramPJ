@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR&display=swap");
+.follwerContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 17.8rem;
+  height: 28.3rem;
+}
+
+.myProfile {
+  display: flex;
+  flex-direction: row;
+}
+.myProfile img {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 0.6rem;
+  border-radius: 50%;
+}
+.myProfile .myInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.myProfile .myInfo .myId {
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  color: #373737;
+}
+.myProfile .myInfo .myName {
+  font-size: 0.81rem;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #737373;
+}
+.myProfile .changeButton {
+  position: absolute;
+  right: 0;
+  margin-top: 0.875rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #0095F6;
+}
+
+.followerListHeader {
+  margin: 1.5rem 0 2.5rem 0;
+}
+.followerListHeader .forYou {
+  position: absolute;
+  left: 0;
+  font-size: 0.85rem;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #737373;
+}
+.followerListHeader .allView {
+  position: absolute;
+  right: 0;
+  font-size: 0.85rem;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #252525;
+}
+
+.footer span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  color: #DCDCDC;
+}
+
+@media screen and (max-width: 1230px) {
+  .follwerContainer {
+    width: 0;
+    height: 0;
+  }
+  .myProfile img {
+    width: 0;
+    height: 0;
+  }
+  .myProfile .myInfo {
+    margin-top: 0;
+  }
+  .myProfile .myInfo .myId {
+    font-size: 0;
+  }
+  .myProfile .myInfo .myName {
+    font-size: 0;
+  }
+  .myProfile .changeButton {
+    font-size: 0;
+  }
+  .followerListHeader {
+    margin: 0;
+  }
+  .followerListHeader .forYou {
+    font-size: 0;
+  }
+  .followerListHeader .allView {
+    font-size: 0;
+  }
+  .footer span {
+    font-size: 0;
+  }
+}/*# sourceMappingURL=follower.css.map */
