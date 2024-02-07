@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 .story {
   display: flex;
-  position: relative;
   flex-direction: row;
   width: 31rem;
   height: 5.7rem;
-  left: 288px;
   padding-top: 2rem;
 }
 

@@ -5,10 +5,9 @@
 }
 
 .navBar {
-  position: fixed;
-  width: 16rem;
+  position: sticky;
+  max-width: 16rem;
   height: 100vh;
-  left: 0;
   margin-left: 2rem;
 }
 
