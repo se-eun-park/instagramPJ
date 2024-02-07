@@ -1,48 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Json파일 외부에서 불러올 때, 브라우저 보안 이슈로 fetch요청 거부되어 직접 선언 방식으로 변경
-    // import  해서도 해봤는데 cors 에러
-    const data = [
-        {
-            "id": "1",
-            "name": "user_name_1",
-            "profileImg" : "./asset/testImg/test1.png",
-            "postImg": [
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150"
-            ],
-            "postDate":"2024-01-30",
-            "isLiked": false,
-            "isStoryViewed": false
-        },
-        {
-            "id": "2",
-            "name": "user_name_2",
-            "profileImg" : "./asset/testImg/test2.png",
-            "postImg": [
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150"
-            ],
-            "postDate":"2024-01-28",
-            "isLiked": false,
-            "isStoryViewed": false
-        },
-        {
-            "id": "3",
-            "name": "user_name_3",
-            "profileImg" : "./asset/testImg/test3.png",
-            "postImg": [
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150"
-            ],
-            "postDate":"2024-01-31",
-            "isLiked": false,
-            "isStoryViewed": false
-        }
-    ]
-
     const profileContainer = document.getElementsByClassName('profileContainer')[0];
     const userName = document.getElementsByClassName('userName')[0];
 
