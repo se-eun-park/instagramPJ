@@ -54,20 +54,3 @@ table {
 	width: 1200px;
 	height: 100%;
 }
-
-.followImg img {
-	margin-top: 2rem;
-	margin-left: 7.8rem;
-
-	width: 19rem;
-	height: 29rem;
-
-}
-
-@media screen and (max-width: 1230px) {
-	.followImg img {
-		width: 0;
-		height: 0;
-	
-	}
-}
