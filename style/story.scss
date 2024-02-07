@@ -59,10 +59,12 @@
 }
 
 .userName {
-    span {
-        font-size: 0.8rem;
-        font-family: 'Barlow', sans-serif;
-    }
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 0.3rem;
+    font-size: 0.8rem;
+    font-family: 'Barlow', sans-serif;
 }
 
 @media screen and (max-width: 800px){

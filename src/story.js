@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const imgBack = document.createElement('div');
         const imgStroke = document.createElement('div');
 
-        const nameSpan = document.createElement('span');
+        const nameBlock = document.createElement('div');
 
         img.src = user.profileImg;
         img.alt = `${user.name}의 프로필 사진`;
@@ -33,12 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
         profileContainer.appendChild(imgBack);
         profileContainer.appendChild(imgStroke);
         
-        nameSpan.textContent = user.name;
-        nameSpan.classList.add(`name${user.id}`);
+        nameBlock.textContent = user.name;
+        nameBlock.classList.add(`name${user.id}`);
 
-        nameSpan.style.marginRight = `${offset_name}rem`
+        nameBlock.style.display = 'block';
+        nameBlock.style.textAlign = 'center';
+        nameBlock.style.width = `4.5rem`;
+        nameBlock.style.marginRight = `${offset_name}rem`;
 
-        userName.appendChild(nameSpan);
+        userName.appendChild(nameBlock);
 
         img.addEventListener('click', () => {
             user.isStoryViewed = true;
