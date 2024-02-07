@@ -68,13 +68,8 @@
 <br/>
 
 ## 👋 팀원
-
-<a href="https://github.com/se-eun-park" target="_blank">
-<img style="width:100px; border-radius:50%; border:1px solid #fff; margin-right:20px;" src="https://avatars.githubusercontent.com/u/81418633?v=4" />
-</a>
-<a href="https://github.com/coolfin" target="_blank">
-<img style="width:100px; border-radius:50%; border: 1px solid #fff;" src="https://avatars.githubusercontent.com/u/56531884?v=4" />
-</a>
+<a href="https://github.com/se-eun-park" target="_blank"><img style="width:100px; border-radius:50%; border:1px solid #fff; margin-right:20px;" src="https://avatars.githubusercontent.com/u/81418633?v=4" /></a>
+<a href="https://github.com/coolfin" target="_blank"><img style="width:100px; border-radius:50%; border: 1px solid #fff;" src="https://avatars.githubusercontent.com/u/56531884?v=4" /></a>
 
 <br/>
 <br/>
