@@ -30,12 +30,13 @@ function renderFollowerList() {
                 forYouText.textContent = '회원님을 위한 추천';
 
                 const followText = document.createElement('span');
+                followText.classList.add(`followText${user.id}`);
                 followText.textContent = '팔로우';
                 followText.style.cursor = 'pointer';
                 followText.addEventListener('click', () => {
                     user.Follower = true;
                     renderStory();
-                    updateFollowerItem(user.id);
+                    updateFollowerItem(user.Follower, user.id);
                 })
 
                 followerName.appendChild(forYouText);
@@ -51,11 +52,11 @@ function renderFollowerList() {
     });
 }
 
-function updateFollowerItem(userId) {
-    const followerItemId = `followerItem${userId}`;
-    const followerItem = document.getElementById(followerItemId);
+function updateFollowerItem(Follower, id) {
+    const followTrue = document.querySelector(`.followText${id}`);
     
-    if (followerItem) {
-        followerItem.style.display = 'none';
+    if (Follower) {
+        followTrue.style.color = '#373737';
+        followTrue.textContent = '팔로워';
     }
 }
